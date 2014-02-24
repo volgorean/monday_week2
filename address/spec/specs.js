@@ -1,7 +1,11 @@
-
-
-describe('returnTitle', function() {
-  it("the first letter of every word but is the will be capitilized", function(){
-    returnTitle("is lauren a awesome").should.eql("Is Lauren a Awesome");
+describe('Contact', function() {
+  describe('fullName', function() {
+    it("returns the first and last name of the contact", function() {
+      var jamesBrown = Object.create(Contact);
+      jamesBrown.firstName = "James";
+      jamesBrown.lastName = "Brown";
+      jamesBrown.fullName().should.equal("James Brown");
+    });
   });
 });
+
