@@ -1,16 +1,10 @@
 var Triangle = {
   testIfValid: function() {
-    console.log("side1:" + this.side1);
-    console.log("side2:" + this.side2);
-    console.log("side3:" + this.side3);
     if ((this.side1 > (this.side2 + this.side3))) {
-      console.log("(this.side2 > (this.side2 + this.side3)");
       return false;
     } else if (this.side2 > (this.side1 + this.side3)){
-      console.log("(this.side2 > (this.side1 + this.side3)");
       return false;
     } else if(this.side3 > (this.side2 + this.side1)) {
-      console.log("(this.side3 > (this.side2 + this.side1)");
       return false;
     } else {
       return true;
